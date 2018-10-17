@@ -1,0 +1,60 @@
+body{
+    background: rgb(240, 240, 240);
+  }
+  .alert-error{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+  
+  .alert-success_msg{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+  html, body{
+    margin : 0px;
+    padding : 0px;
+  }
+  .navbar{
+    background : white;
+  }
+  .navbar-brand{
+      margin-left: 50px;
+  }
+  ul li {
+    display : inline;
+  }
+  .padLight{
+    padding-top : 40px;
+  }
+  .padHeavy{
+    padding-top : 70px;
+  }
+  .container{
+    padding-top : 70px;
+  }
+  .checkbox{
+    display : inline-block;
+    padding-right: 30px;
+  }
+  .listFlex{
+    display : flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .title1{
+    margin-top: 40px;
+    display : flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .right{
+    position : absolute;
+    right : 150px;
+  }
+  .left{
+    position : absolute;
+    left : 150px;
+  }
+  

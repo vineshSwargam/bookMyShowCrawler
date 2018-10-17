@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  h4 Events Search
+  form(method="POST", action="/")
+    #form-group
+     label 
+      h6 City
+     select.form-control(type='select' name='city')
+      option Mumbai
+      option Delhi NCR
+      option Bengaluru
+      option Pune  
+    br
+    #form-group
+     label 
+      h6 Date
+     select.form-control(type='select' name='date')
+      option Today
+      option Tomorrow
+      option This Weekend
+      option Next Weekend  
+    br  
+    input.btn.btn-primary(type="submit" value='Search')
+  if events
+   .title1
+    h4 Events Found
+    a.btn.btn-primary#download(href='/download') Download Events as CSV
+   ul.list-group#events(style={"padding-top" : "15px"})
+    each event, i in events
+     li.list-group-item.listFlex
+      .details
+       a(href = "/article/")=event.eventTitle
+       br
+       h7=event.date
+      .price
+       h6=event.price
+  
+
+    

@@ -1,0 +1,20 @@
+{
+  "name": "scrapebms",
+  "version": "1.0.0",
+  "description": "A simple web crawler for BookMyShow.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinesh Swargam",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "node-fetch": "^2.2.0",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3"
+  }
+}

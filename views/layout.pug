@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title bookIt!
+    link(rel="stylesheet" href="/css/bootstrap/dist/css/bootstrap.css")
+    link(rel='stylesheet' href='/css/style.css')
+  
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.navbar-brand(href='/') bookIt!
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto.right
+          li.nav-item
+           a.nav-link(href='/') NavItem1
+          li.nav-item
+           a.nav-link(href='/') NavItem2
+
+    .container
+      block content
+      br
+      hr
+      footer
+        p Copyright &copy; 2017
+  script(src="/js/main.js")
