@@ -169,9 +169,10 @@ const filterEvents = (events, today, tomorrow, weekendDates, nextWeekendDates) =
         filteredEvents = [...eventsTomorrow]
     }
    if(weekendDates.length !== 0){
+       console.log(weekendDates);
         let eventsThisWeekend = events.filter(event => 
             weekendDates.indexOf(event.date)!==-1);
-        filteredEvents = [...weekendDates];
+        filteredEvents = [...eventsThisWeekend];
    }
    if(nextWeekendDates.length !== 0){
         let eventsNextWeekend = events.filter(event => 
