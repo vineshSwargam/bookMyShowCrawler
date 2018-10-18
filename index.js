@@ -169,7 +169,7 @@ const filterEvents = (events, today, tomorrow, weekendDates, nextWeekendDates) =
         filteredEvents = [...eventsTomorrow]
     }
    if(weekendDates.length !== 0){
-       console.log(weekendDates);
+       //console.log(weekendDates);
         let eventsThisWeekend = events.filter(event => 
             weekendDates.indexOf(event.date)!==-1);
         filteredEvents = [...eventsThisWeekend];
@@ -260,9 +260,9 @@ app.post('/', (req, res) => {
             //After filtering the events
             //Write row to CSV using forEach method
             events.forEach( event => {
-                writeStream.write(`${event.date}, 
-                                    ${event.eventTitle}, 
-                                    ${event.price} \n`);
+                writeStream.write(`"${event.date}", 
+                                    "${event.eventTitle}", 
+                                    "${event.price}" \n`);
             });
                            
             //rendering the 'home' view using PUG Template engine
